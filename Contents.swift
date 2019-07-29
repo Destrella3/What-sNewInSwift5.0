@@ -21,3 +21,23 @@ var programingLanguage = "iOS"
 // handling string interpolation by adding an extra # delimeter embedding in \#()
 var pursuitMessage = #""Welcome to Pursuit's \#(programingLanguage) 6.0 cohort""#
 print(pursuitMessage)
+
+//===================================================
+// Character Properties
+//===================================================
+
+let sentence = "1$🔥&4?ap*"
+for char in sentence {
+    if char.isLetter {
+        print("letter: \(char)")
+    }
+    if char.isCurrencySymbol {
+        print("currency symbol: \(char)")
+    }
+    if char.isSymbol {
+        print("symbol: \(char)")
+    }
+    if char.isPunctuation {
+        print("puncutaion: \(char)")
+    }
+}
